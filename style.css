@@ -117,20 +117,30 @@ nav {
 }
 
 .hero h1 {
-  font-size: 4.5rem;
-  line-height: 1.1;
+  font-size: clamp(2.5rem, 8vw, 4.2rem);
+  line-height: 1.2;
   margin-bottom: 1.5rem;
+  max-width: 900px;
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-muted);
-  max-width: 600px;
-  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .name {
   color: var(--accent-primary);
+  display: inline-block;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .btn {
